@@ -5,8 +5,8 @@ script:
 - echo "$MODE" > $HOME/$MODE
 matrix:
   include:
- - env: MODE=apple
- - env: MODE=pear
+   - env: MODE=apple
+   - env: MODE=pear
 deploy:
   provider: releases
   api_key:
