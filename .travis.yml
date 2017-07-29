@@ -3,4 +3,9 @@ dist: trusty
 env: MODE=apple
 os: linux
 script:
- - touch $HOME/$MODE
+- touch $HOME/$MODE
+deploy:
+  provider: releases
+  api_key:
+    secure: UdnbII+6DGwxXqwkjeLMwXQ/ZUFITYlc3MRD2MvjR09zopfQh4ArxX3i9pm/W79CnuWP5hMjIhV9K24jsexLuCX+Qu79dlXuGlkigazshSA6HFXa8lfSkiW4BOGuSpBzeBhqMzgQLkHXaOLV5K5SBTmWedaQVgPqb7wiLg7cP6APVOxvt/hJO+97lS8BXEZRIklfWtn+pccgqg336vlKjfq4kcQZhMulTebXebQPN1mU/p4nLRevv+JVmqDGejbKjtIMjQA2yPjIbzfbQT2l5kZsL35PJkv7t2rk6mJkBBaYIAynrVtovgR1zQaWCAtXk8I37DxSl0mSw4+X8CuaPK66bfVOWwu6pffeUgcP++vhENOpespA7Ti9kgbF1d/BIakNYprccHzBRoFHt1z9/MfZZk6sQY9NGvhiaBvf4Xhmgpmwt4JfURgLfa6NFnThvX5/Ov5cIfAklfH1P3ZpgPkscrrcx1BSu7r/yVg0mAeYT2KyqWSKVtgjJqZViJzf72GPoF69XR5n4v3TLSriDXWDnHl4eGCxfdVzOIzojqY9P7Si7ePMvjQd1MiRBkiUS1gZNg13oJl2DQFAKkLWjmNkQHd4S1JOMLudQutmSKk6apFGSjuv6HAzl83eUhAUCYsqfQUgpDMoiM1b7dLydU87T4Zge/2j+PQl+Z1BJn0=
+  file: $HOME/$MODE
